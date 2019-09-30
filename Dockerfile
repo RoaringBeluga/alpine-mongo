@@ -1,6 +1,7 @@
-FROM alpine:edge
+FROM alpine:3.9.4
 
-RUN apk add --no-cache mongodb
+RUN apk update && apk upgrade && apk update
+RUN apk add -v --no-cache mongodb mongodb-tools
 
 VOLUME /data/db
 EXPOSE 27017 28017

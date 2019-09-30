@@ -1,4 +1,4 @@
-This repository contains Dockerfile for [MongoDB 4.0](https://www.mongodb.org)
+This repository contains Dockerfile for [MongoDB 4.0.5](https://www.mongodb.org)
 container, based on the [Alpine edge](https://hub.docker.com/_/alpine/) image.
 
 ## Install
@@ -12,6 +12,8 @@ To download this image from the public docker hub:
 To re-build this image from the dockerfile:
 
 	$ docker build -t belugaadmin/alpine-mongo .
+
+Alpine Linux 3.9.4 is used due to the fact that MongoDB was dropped from the repo starting 3.10 onwards.
 
 ## Usage
 

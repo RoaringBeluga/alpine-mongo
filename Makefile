@@ -1,7 +1,7 @@
-VERSION = 4.0.6-1
-IMAGE = mvertes/alpine-mongo:$(VERSION)
+VERSION = 4.0.5
+IMAGE = belugaadmin/alpine-mongo:$(VERSION)
 
-all:
+all: image publish
 
 image:
 	docker build -t $(IMAGE) --no-cache .
