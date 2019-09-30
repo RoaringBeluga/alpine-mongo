@@ -1,4 +1,4 @@
-VERSION = 4.0.5
+VERSION = latest
 IMAGE = belugaadmin/alpine-mongo:$(VERSION)
 
 all: image publish
